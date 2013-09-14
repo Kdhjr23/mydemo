@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Gallery</title> 
+<meta name="viewport" HTTP-EQUIV="refresh"  content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bshop.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<script src="js/main.js"></script>
+</script>
+
+
+<script>
+function formReset()
+{
+document.getElementById("appt").reset();
+}
+</script>
+
+</head>
+<body>
+
+<div data-role="page" id="six" data-theme="a" data-type="horizontal" >
+
+	<div data-role="header" data-theme="a">
+		<h1>Appointment</h1>
+	</div><!-- /header -->
+
+<form action="ajax/logicDB.php" method="get"  id="appt"class="ajax" > 
+<div>
+<input type="text" name="name" placeholder="Enter Your Name">
+</div>
+
+<div>
+<input type="text" name="phone" placeholder="EG:8505559999">
+</div>
+
+
+<div>
+<input type="email" name="email" placeholder="Enter Your Email Address">
+</div>
+
+<div>
+<input type="text" name="rservice" placeholder="Enter Your Service Request">
+</div>
+
+
+<div>
+<input type="text" name="rsytlist" placeholder="Enter Your Hair Stylist">
+</div>
+
+<div>
+<input type="datetime-local" name="date" placeholder="">
+</div>
+
+
+<div>
+<textarea name="message" placeholder="Additional Information"></textarea>
+</div>
+
+<input type="submit" name="submit" value="Send">
+
+
+</form>
+        <div data-role="footer" data-position="fixed">
+<div data-role="navbar" data-grid="d" data-theme="c" data-type="horizontal" data-position="fixed" >
+		<ul>
+  <li><a class="btn" href="aboutus.html" ><i class="icon-info-sign icon-2x background-color: #ffffff"></i></a></li> 
+  <li><a class="btn" href="loyal.html"><i class="icon-star icon-2x"></i></a></li> 
+  <li><a class="btn" href="app.html" ><i class="icon-calendar icon-2x"></i></a></li> 
+  <li><a class="btn" href="map.html"><i class="icon-map-marker icon-2x"></i></a></li>
+  <li><a class="btn" href="menu.html"><i class="icon-list icon-2x"></i></a></li> 
+  </ul>
+</div>
+	</div><!-- /footer -->	
+
+</div>
+</body>
+</html>
